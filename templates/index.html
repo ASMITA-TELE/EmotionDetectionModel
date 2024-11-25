@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('/static/bgimage2.jpg'); /* Set your background image */
+            background-size: cover; /* Cover the whole page */
+            background-position: center; /* Center the image */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full height of the viewport */
+            color: white; /* Text color */
+            font-family: 'Arial', sans-serif; /* Font style */
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        img {
+            border: 2px solid white; /* Video border */
+            border-radius: 10px; /* Rounded corners */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Emotion Detection System</h1>
+        <h2>Webcam Feed</h2>
+        <img src="{{ url_for('video_feed') }}" alt="Video Feed" width="640" height="480">
+    </div>
+</body>
+</html>
